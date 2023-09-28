@@ -4,7 +4,7 @@ createApp({
   data() {
     return {
       message: "Hello Vudde!",
-      ciccio: "cicciopozzo",
+      discList: ["carlo", "angela", "giorgioulisse"],
     };
   },
 }).mount("#app");

@@ -25,7 +25,12 @@
     <div class="container mt-5">
 
         <!-- dove avviene la magia -->
-        <div id="app">{{ ciccio }} {{ message}}</div>
+        <div id="app">{{ discList }} {{ message}}
+            <div v-for="(nome, index) in discList">
+                {{ discList[index]}}
+
+            </div>
+        </div>
     </div>
 
 </body>
