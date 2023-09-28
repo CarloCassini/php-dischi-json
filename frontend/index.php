@@ -15,6 +15,9 @@
         </script>
     <!-- add vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <!-- add vue -->
     <script src="./main.js" defer> </script>
 
 
@@ -25,9 +28,9 @@
     <div class="container mt-5">
 
         <!-- dove avviene la magia -->
-        <div id="app">{{ discList }} {{ message}}
+        <div id="app">
             <div v-for="(nome, index) in discList">
-                {{ discList[index]}}
+                <h1> {{discList[index].title}}</h1>
 
             </div>
         </div>
