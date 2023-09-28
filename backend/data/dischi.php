@@ -26,10 +26,4 @@ $dischi = [
     ],
 ];
 
-header('Content-Type: application/json');
-echo json_encode($dischi);
-// arrivato al minuto 14.50
-
-
-
 ?>
