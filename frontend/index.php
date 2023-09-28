@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
         defer>
-        </script>
+    </script>
     <!-- add vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios -->
@@ -29,9 +29,20 @@
 
         <!-- dove avviene la magia -->
         <div id="app">
-            <div v-for="(nome, index) in discList">
-                <h1> {{discList[index].title}}</h1>
+            <div class="row">
+                <div class="col-6">
 
+                    <div v-for="(nome, index) in discList">
+                        <div class="card" style="width: 18rem;">
+                            <img :src="discList[index].poster" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{discList[index].title}}</h5>
+                            </div>
+                        </div>
+                        <h1> </h1>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
